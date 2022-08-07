@@ -1,0 +1,21 @@
+{% extends "display.html" %}
+{% block content %}
+<div class="jumbotrom">
+    <form method="POST">
+        {{form.hidden_tag()}}
+        <h4>Please Enter the Company Name you Want to Update.</h4>
+        {{form.ucompanyName}}
+        <hr style="border: none;">
+        <h4>Enter the updated details of the company.</h4>
+        {{form.companyName}}
+        <hr style="border: none;">
+        {{form.emaiId}}
+        <hr style="border: none;">
+        {{form.phoneNumber}}
+        <hr style="border: none;">
+        {{form.address}}
+        <hr style="border: none;">
+        {{form.submit}}
+    </form>
+</div>
+{% endblock %}
